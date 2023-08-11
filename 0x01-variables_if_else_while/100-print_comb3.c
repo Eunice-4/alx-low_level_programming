@@ -1,21 +1,22 @@
 #include <stdio.h>
+
 /**
- * main - Prints all possible different outcomes of two digits
+ * main - Prints all possible different combinations of two digits
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n, m;
+	int first_digit, second_digit;
 
-	for (n = 0; n <= 8; n++)
+	for (first_digit = 0; first_digit <= 8; first_digit++)
 	{
-		for (m = 1; m <= 9; m++)
+		for (second_digit = first_digit + 1; second_digit <= 9; second_digit++)
 		{
-			putchar(n);
-			putchar(m);
+			putchar(first_digit + '0');
+			putchar(second_digit + '0');
 
-			if (n != 8 || m != 9)
+			if (first_digit != 8 || second_digit != 9)
 			{
 				putchar(',');
 				putchar(' ');
