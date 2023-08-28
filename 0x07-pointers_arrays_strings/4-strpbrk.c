@@ -1,25 +1,24 @@
+#include "main.h"
 /**
- * strpbrk - searches a string for any of a set of characters
- * @s: input string to search within
- * @accept: set of characters to search for in the input string
- * Return: pointer to the first occurrence of a character from 'accept' in 's',
- *         or NULL if no characters from 'accept' are found in 's'
+ * _strpbrk - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
-	int j;
+		int k;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		for (j = 0; accept[j] != '\0'; j++)
+		while (*s)
 		{
-			if (s[i] == accept[j])
+			for (k = 0; accept[k]; k++)
 			{
-			return (&s[i]);
+			if (*s == accept[k])
+			return (s);
 			}
+		s++;
 		}
-		i++;
-	}
+
 	return ('\0');
 }
+
