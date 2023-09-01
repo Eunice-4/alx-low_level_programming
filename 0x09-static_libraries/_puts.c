@@ -14,4 +14,3 @@ void _puts(const char *str)
 		i++;
 	}
 }
-
