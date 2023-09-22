@@ -23,6 +23,5 @@ size_t print_list(const list_t *h)
 		no_nodes++;
 		h = h->next;
 	}
-	printf("\n");
 	return (no_nodes);
 }
