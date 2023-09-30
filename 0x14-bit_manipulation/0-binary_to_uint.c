@@ -12,24 +12,24 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int exponent;
-	unsigned int co_num;
+        int exponent;
+        unsigned int co_num;
 
-	co_num = 0;
+        co_num = 0;
 
-	exponent = strlen(b) - 1;
+        exponent = strlen(b) - 1;
 
-	for (; *b != '\0'; b++)
-	{
-		if (!b || (*b != '0' && *b != '1'))
-		{
-			return (0);
-		}
-		if (*b == '1')
-		{
-			co_num = (1 << exponent) + co_num;
-		}
-		exponent--;
-	}
-	return (co_num);
+        for (; *b != '\0'; b++)
+        {
+                if (!b || (*b != '0' && *b != '1'))
+                {
+                        return (0);
+                }
+                if (*b == '1')
+                {
+                        co_num = (1 << exponent) + co_num;
+                }
+                exponent--;
+        }
+        return (co_num);
 }
