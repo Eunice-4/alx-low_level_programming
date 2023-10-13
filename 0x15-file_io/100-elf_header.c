@@ -155,7 +155,8 @@ void print_osabi(unsigned char *e_ident)
 		break;
 	case ELFOSABI_SOLARIS:
 		printf("UNIX - Solaris\n");
-		break;	case ELFOSABI_IRIX:
+		break;
+	case ELFOSABI_IRIX:
 		printf("UNIX - IRIX\n");
 		break;
 	case ELFOSABI_FREEBSD:
@@ -194,6 +195,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 {
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 		e_type >>= 8;
+
 	printf(" Type: ");
 
 	switch (e_type)
@@ -309,4 +311,5 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	close_elf(o);
 	return (0);
 }
+
 
