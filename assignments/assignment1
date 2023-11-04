@@ -2,5 +2,11 @@ include <stdio.h>
 include <stdlib.h>
 int main(void)
 {
-    int 
+    int buffer[1024];
+
+    fopen(numbers.txt, RDONLY);
+    fread(buffer, sizeof(int), sizeof(buffer), numbers.txt);
+
+    int sum = 
+
 }
