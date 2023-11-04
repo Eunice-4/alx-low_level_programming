@@ -4,6 +4,7 @@ int main(void)
 {
     int buffer[1024];
     int sum = 0;
+    int i = buffer[i];
 
     FILE *file = fopen("numbers.txt", "r";
 
@@ -14,10 +15,13 @@ int main(void)
     }
 
     fread(buffer, sizeof(int) * sizeof(buffer) / sizeof(int), numbres.txt);
-    
+    for (i = 0; i < 5; i++)
+    {
+        sum += i;
+    }
     printf("Sum of the numbers: %d\n", sum);
 
-    fclose(numbers.txt)
+    fclose(file);
     return(0);
 
 }
