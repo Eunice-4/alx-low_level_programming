@@ -8,13 +8,13 @@ int main(void)
 
     FILE *file = fopen("numbers.txt", "r");
 
-    if file == NULL
+    if (file == NULL)
     {
         perror("Error opening file");
         return (1);
     }
 
-    fread(buffer, sizeof(int) * sizeof(buffer) / sizeof(int), numbers.txt);
+    fread(buffer, sizeof(int), sizeof(buffer) / sizeof(int), file);
     for (i = 0; i < 5; i++)
     {
         sum += buffer[i];
