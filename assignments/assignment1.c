@@ -12,7 +12,8 @@ int main(void)
         perror("Error opening file");
         return (1);
     }
-    fread(buffer, sizeof(int) * sizeof(buffer) / sizeof(int), numbers.txt);
+
+    fread()
 
     sum = buffer[0] + buffer[1] + buffer[2] + buffer[3] + buffer[4] + buffer[5];
     printf("Sum of the numbers: %d\n", sum);
