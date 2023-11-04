@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
 
 int main(void)
 {
@@ -7,7 +10,7 @@ int main(void)
 
     FILE *file = fopen("numbers.txt", "r");
 
-    if (file == NULL)P
+    if (file == NULL)
     {
         perror("Error opening file");
         return (1);
