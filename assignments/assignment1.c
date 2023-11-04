@@ -8,8 +8,8 @@ int main(void)
     int sum = 0;
     int i;
 
-    FILE *file = fopen("numbers.txt", "r");
-    
+    FILE *file = fopen("numbers", "r");
+
     if (file == NULL)
     {
         perror("Error opening file");
