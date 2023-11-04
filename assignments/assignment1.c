@@ -6,7 +6,7 @@ int main(void)
     int sum = 0;
     int i = buffer[i];
 
-    FILE *file = fopen("numbers.txt", "r";
+    FILE *file = fopen("numbers.txt", "r");
 
     if file == NULL
     {
@@ -14,7 +14,7 @@ int main(void)
         return (1);
     }
 
-    fread(buffer, sizeof(int) * sizeof(buffer) / sizeof(int), numbres.txt);
+    fread(buffer, sizeof(int) * sizeof(buffer) / sizeof(int), numbers.txt);
     for (i = 0; i < 5; i++)
     {
         sum += i;
