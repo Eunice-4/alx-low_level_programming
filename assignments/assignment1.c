@@ -8,7 +8,7 @@ int main(void)
 
     FILE *file = fopen("numbers.txt", "r");
 
-    if (file == NULL)
+    if (file == NULL)P
     {
         perror("Error opening file");
         return (1);
