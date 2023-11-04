@@ -5,7 +5,7 @@ int main(void)
     int buffer[1024];
     int sum = 0;
 
-    FILE *file = fopen(numbers.txt, RDONLY);
+    FILE *file = fopen("numbers.txt", "r";
 
     if file == NULL
     {
