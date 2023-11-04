@@ -15,7 +15,7 @@ int main(void)
     }
 
     fread(buffer, sizeof(int), sizeof(buffer) / sizeof(int), file);
-    for (i = 0; i < 5; i++)
+    for (i = 0; i < sizeof(buffer) / sizeof(int); i++)
     {
         sum += buffer[i];
     }
