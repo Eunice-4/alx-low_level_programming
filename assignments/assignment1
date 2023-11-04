@@ -3,10 +3,11 @@ include <stdlib.h>
 int main(void)
 {
     int buffer[1024];
+    int sum;
 
     fopen(numbers.txt, RDONLY);
     fread(buffer, sizeof(int), sizeof(buffer), numbers.txt);
 
-    int sum = 
+    sum = buffer[0 ]
 
 }
