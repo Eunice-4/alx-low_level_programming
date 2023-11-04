@@ -9,7 +9,7 @@ int main(void)
     int i;
 
     FILE *file = fopen("numbers.txt", "r");
-
+    
     if (file == NULL)
     {
         perror("Error opening file");
