@@ -3,9 +3,15 @@ include <stdlib.h>
 int main(void)
 {
     int buffer[1024];
-    int sum;
+    int sum = 0;
 
-    fopen(numbers.txt, RDONLY);
+    FILE *file = fopen(numbers.txt, RDONLY);
+
+    if file == NULL
+    {
+        perror("Error opening file");
+        return (1);
+    }
     fread(buffer, sizeof(int), sizeof(buffer), numbers.txt);
 
     sum = buffer[0] + buffer[1] + buffer[2] + buffer[3] + buffer[4] + buffer[5];
