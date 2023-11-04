@@ -21,7 +21,7 @@ int main(void)
     {
         sum += buffer[i];
     }
-    printf("The numbers in the file: %d\n" "Sum of the numbers: %d\n", buffer[i] sum);
+    printf("The numbers in the file: %d\n" "Sum of the numbers: %d\n", buffer[i], sum);
 
     fclose(file);
     return(0);
