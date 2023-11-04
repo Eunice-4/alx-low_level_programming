@@ -13,9 +13,8 @@ int main(void)
         return (1);
     }
 
-    fread()
-
-    sum = buffer[0] + buffer[1] + buffer[2] + buffer[3] + buffer[4] + buffer[5];
+    fread(buffer, sizeof(int) * sizeof(buffer) / sizeof(int), numbres.txt);
+    
     printf("Sum of the numbers: %d\n", sum);
 
     fclose(numbers.txt)
