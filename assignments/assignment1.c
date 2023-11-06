@@ -16,7 +16,7 @@ int main(void)
         return (1);
     }
 
-    fread(buffer, sizeof(int), sizeof(buffer) / sizeof(int), file);
+    fscanf(buffer, sizeof(int), sizeof(buffer) / sizeof(int), file);
 
     printf("The numbers in the file: %d\n", buffer[i]);
     for (buffer[i] = 0; buffer[i] < sizeof(buffer) / sizeof(int); buffer[i]++)
