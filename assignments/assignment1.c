@@ -17,7 +17,7 @@ int main(void)
     }
 
     fread(buffer, sizeof(int), sizeof(buffer) / sizeof(int), file);
-    for (i = 0; i < sizeof(buffer) / sizeof(int); i++)
+    for (buffer[i] = 0; buffer[i] < sizeof(buffer) / sizeof(int); buffer[i]++)
     {
         printf("The numbers in the file: %d\n", buffer[i]);
         sum += buffer[i];
