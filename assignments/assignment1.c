@@ -22,7 +22,7 @@ int main(void)
         printf("The numbers in the file: %d\n", buffer[i]);
         sum += buffer[i];
     }
-    printf("Sum of the numbers: %d\n", buffer[i], sum);
+    printf("Sum of the numbers: %d\n", sum);
 
     fclose(file);
     return(0);
