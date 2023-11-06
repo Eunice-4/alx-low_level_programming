@@ -19,9 +19,10 @@ int main(void)
     fread(buffer, sizeof(int), sizeof(buffer) / sizeof(int), file);
     for (i = 0; i < sizeof(buffer) / sizeof(int); i++)
     {
+        printf("The numbers in the file: %d\n", buffer[i]);
         sum += buffer[i];
     }
-    printf("The numbers in the file: %d\n" "Sum of the numbers: %d\n", buffer[i], sum);
+    printf("Sum of the numbers: %d\n", buffer[i], sum);
 
     fclose(file);
     return(0);
