@@ -13,5 +13,8 @@ void run_command(char *user_input)
 
     child_pid = fork();
 
-    if(child_pid == )
+    if(child_pid == -1)
+    {
+        
+    }
 }
