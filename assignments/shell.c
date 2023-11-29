@@ -1,7 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int display_prompt(void)
+void display_prompt(void)
 {
-    printf("$ ")
+    printf("$ ");
+}
+
+void run_command(char *user_input)
+{
+    pid_t child_pid;
+    int child_status;
+
+    child_pid = fork();
+
+    if(child_pid == )
 }
