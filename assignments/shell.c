@@ -21,5 +21,9 @@ void run_command(char *user_input, char *argv[])
     else if(child_pid == 0)
     {
         if(execve("/bin/sh", argv, NULLL) == -1)
+        {
+            fprintf(STDERR_FILENO, "Error");
+            exit(1);
+        }
     }
 }
