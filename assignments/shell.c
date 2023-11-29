@@ -18,7 +18,7 @@ void run_command(char *user_input)
         fprintf(STDERR_FILENO, "Error: failed to fork");
         exit(1);
     }
-    else if(child)
+    else if(child_pid == 0)
     {
         if(execve("/bin/sh", argv, NULLL) == -1)
     }
