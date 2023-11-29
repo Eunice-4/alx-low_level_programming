@@ -15,6 +15,7 @@ void run_command(char *user_input)
 
     if(child_pid == -1)
     {
-        
+        fprintf(STDERR_FILENO, "Error: failed to fork");
+        exit(1);
     }
 }
