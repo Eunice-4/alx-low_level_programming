@@ -6,7 +6,7 @@ void display_prompt(void)
     printf("$ ");
 }
 
-void run_command(char *user_input)
+void run_command(char *user_input, char *argv[])
 {
     pid_t child_pid;
     int child_status;
