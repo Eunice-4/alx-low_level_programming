@@ -12,7 +12,7 @@ void run_command(char *user_input)
 {
 	pid_t child_pid;
 	int child_status;
-	char **command_arg = malloc(sizeof(char) * 4);
+	char **command_arg = malloc(sizeof(char*) * 4);
 
 	if (command_arg == NULL)
 	{

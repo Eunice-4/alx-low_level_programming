@@ -7,18 +7,12 @@ int my_strcmp(const char *strA, const char *strB)
 		strA++;
 		strB++;
 	}
-	
-	if (*strA == *strB)
+
+	if (*strA == '\0' && *strB == '\0')
 	{
 		return (0);
 	}
-	else if (*strA < *strB)
-	{
-		return (-1);
-	}
-	else
-	{
-		return (1);
-	}
+
+	return (*strA - *strB);
 }
 
